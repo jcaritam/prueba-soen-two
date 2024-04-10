@@ -15,3 +15,22 @@ const to_do = [
     'Comprar entradas para el cine',
 ]
 
+const ul = document.querySelector('ul')
+
+
+to_do.forEach(item => {
+    console.log(item)
+    let li = document.createElement('li')
+    let  p = document.createElement('p')
+    let checkbox = document.createElement('input')
+    checkbox.type = 'checkbox'
+    p.innerText = item
+    // checkbox.labels = item
+    li.appendChild(checkbox)
+    li.appendChild(p)
+    // li.innerHTML = item
+    ul.appendChild(li)
+})
+
+console.log('tes')
+
